@@ -1,6 +1,9 @@
 Webinst::Application.routes.draw do
-  resources :pics
+  resources :autors
 
+  resources :pics
+  match 'pics/:id/view/:nombrefile' => 'pics#view', :as => :view_pic
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

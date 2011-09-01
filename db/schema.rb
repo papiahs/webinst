@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831152233) do
+ActiveRecord::Schema.define(:version => 20110901170001) do
+
+  create_table "autors", :force => true do |t|
+    t.string   "nombre"
+    t.string   "especialidad"
+    t.integer  "pic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pics", :force => true do |t|
     t.string   "titulo"

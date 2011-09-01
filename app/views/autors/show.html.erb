@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @autor.nombre %>
+</p>
+
+<p>
+  <b>Especialidad:</b>
+  <%= @autor.especialidad %>
+</p>
+
+<p>
+  <b>Pic:</b>
+  <%= @autor.pic_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_autor_path(@autor) %> |
+<%= link_to 'Back', autors_path %>

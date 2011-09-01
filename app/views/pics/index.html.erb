@@ -1,11 +1,10 @@
-<h1>Listing pics</h1>
+<h1>Listado de Imagenes</h1>
 
 <table>
-  <tr>
+  <tr> <th></th>
     <th>Titulo</th>
     <th>Nombre</th>
     <th>Tipo</th>
-    <th>Data</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +12,10 @@
 
 <% @pics.each do |pic| %>
   <tr>
+  	<td><%= image_tag url_img(pic.id,pic.nombre), :title => pic.titulo %></td>
     <td><%= pic.titulo %></td>
     <td><%= pic.nombre %></td>
     <td><%= pic.tipo %></td>
-    <td><%= pic.data %></td>
     <td><%= link_to 'Show', pic %></td>
     <td><%= link_to 'Edit', edit_pic_path(pic) %></td>
     <td><%= link_to 'Destroy', pic, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -26,4 +25,4 @@
 
 <br />
 
-<%= link_to 'New Pic', new_pic_path %>
+<%= link_to 'Nueva Imagen', new_pic_path %>

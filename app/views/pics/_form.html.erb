@@ -1,7 +1,7 @@
 <%= form_for(@pic, :html=>{:multipart =>true}) do |f| %>
   <% if @pic.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@pic.errors.count, "error") %> prohibited this pic from being saved:</h2>
+      <h2><%= pluralize(@pic.errors.count, "error se ha detectado", "errores se han detectado") %> :</h2>
 
       <ul>
       <% @pic.errors.full_messages.each do |msg| %>
@@ -16,18 +16,10 @@
     <%= f.text_field :titulo %>
   </div>
   <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo %><br />
-    <%= f.text_field :tipo %>
-  </div>
-  <div class="field">
-    <%= f.label :data %><br />
-    <%= f.file_field :data %>
+    <%= f.label "Imagen" %><br />
+    <%= f.file_field "uploadfield" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Enviar'%>
   </div>
 <% end %>

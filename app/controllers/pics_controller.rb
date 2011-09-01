@@ -40,11 +40,10 @@ class PicsController < ApplicationController
   # POST /pics
   # POST /pics.xml
   def create
-    @pic = Pic.new(params[:pic])
-    @pic.data= params[:pic][:data]
+    @pic = Pic.new(params[:pic])    
     respond_to do |format|
       if @pic.save
-        format.html { redirect_to(@pic, :notice => 'Pic was successfully created.') }
+        format.html { redirect_to(@pic, :notice => 'Se ha cargado la imagen correctamente.') }
         format.xml  { render :xml => @pic, :status => :created, :location => @pic }
       else
         format.html { render :action => "new" }
@@ -60,7 +59,7 @@ class PicsController < ApplicationController
 
     respond_to do |format|
       if @pic.update_attributes(params[:pic])
-        format.html { redirect_to(@pic, :notice => 'Pic was successfully updated.') }
+        format.html { redirect_to(@pic, :notice => 'Se ha actualizado la imagen correctamente') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,4 +79,11 @@ class PicsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  # GET /pics/1/view/nombrefile
+  def view
+    @pic = Pic.find(params[:id])
+    send_data(@pic.data, :filename => @pic.nombre, :type => @pic.tipo, :disposition => "inline")
+  end
+  
 end

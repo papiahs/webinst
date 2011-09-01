@@ -16,10 +16,10 @@
 </p>
 
 <p>
-  <b>Data:</b>
-  <%= @pic.data %>
+  <b>Data:</b><br/>
+  <%= image_tag url_img(@pic.id,@pic.nombre)%><br/>
 </p>
 
 
-<%= link_to 'Edit', edit_pic_path(@pic) %> |
-<%= link_to 'Back', pics_path %>
+<%= link_to 'Editar', edit_pic_path(@pic) %> |
+<%= link_to 'Volver', pics_path %>
