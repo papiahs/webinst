@@ -12,7 +12,7 @@
 
 <p>
   <b>Pic:</b>
-  <%= @autor.pic_id %>
+  <%= image_tag url_img(@autor.pic.id,@autor.pic.nombre), :title => @autor.pic.titulo %>
 </p>
 
 

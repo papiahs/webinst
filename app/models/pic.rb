@@ -1,5 +1,6 @@
 class Pic < ActiveRecord::Base
   has_many :autor
+  has_many :ref
   attr_reader :uploadfield
   validates :titulo, :tipo, :nombre ,:presence => {:message => "Debe ser completado"}
   validates_format_of :tipo, :with => /^image/, 

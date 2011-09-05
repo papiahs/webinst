@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @ref.titulo %>
+</p>
+
+<p>
+  <b>Detalle:</b>
+  <%= @ref.detalle %>
+</p>
+
+<p>
+  <b>Pic:</b>
+  <%= @ref.pic_id %>
+</p>
+
+<p>
+  <b>Autor:</b>
+  <%= @ref.autor_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_ref_path(@ref) %> |
+<%= link_to 'Back', refs_path %>

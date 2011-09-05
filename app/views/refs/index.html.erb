@@ -1,0 +1,29 @@
+<h1>Listing refs</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Detalle</th>
+    <th>Pic</th>
+    <th>Autor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @refs.each do |ref| %>
+  <tr>
+    <td><%= ref.titulo %></td>
+    <td><%= ref.detalle %></td>
+    <td><%= ref.pic_id %></td>
+    <td><%= ref.autor_id %></td>
+    <td><%= link_to 'Show', ref %></td>
+    <td><%= link_to 'Edit', edit_ref_path(ref) %></td>
+    <td><%= link_to 'Destroy', ref, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ref', new_ref_path %>

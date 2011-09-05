@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110901170001) do
+ActiveRecord::Schema.define(:version => 20110905172358) do
 
   create_table "autors", :force => true do |t|
     t.string   "nombre"
@@ -20,11 +20,25 @@ ActiveRecord::Schema.define(:version => 20110901170001) do
     t.datetime "updated_at"
   end
 
+  create_table "autors_refs", :id => false, :force => true do |t|
+    t.integer "autor_id"
+    t.integer "ref_id"
+  end
+
   create_table "pics", :force => true do |t|
     t.string   "titulo"
     t.string   "nombre"
     t.string   "tipo"
     t.binary   "data",       :limit => 1048576
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refs", :force => true do |t|
+    t.string   "titulo"
+    t.string   "detalle"
+    t.integer  "pic_id"
+    t.integer  "autor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

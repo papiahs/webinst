@@ -20,8 +20,8 @@
     <%= f.text_field :especialidad %>
   </div>
   <div class="field">
-    <%= f.label :pic_id %><br />
-    <%= f.text_field :pic_id %>
+      <%= f.label :pic_id %><br />
+      <%= select("autor", "pic_id", Pic.find(:all, :order=>"titulo ASC").collect {|p| [ p.titulo + "(" + p.nombre + ")" , p.id ] }, {:include_blank => 'Seleccione una imagen'}) %> 
   </div>
   <div class="actions">
     <%= f.submit %>

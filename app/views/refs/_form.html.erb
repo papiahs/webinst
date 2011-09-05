@@ -1,0 +1,39 @@
+<%= form_for(@ref) do |f| %>
+  <% if @ref.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ref.errors.count, "error") %> prohibited this ref from being saved:</h2>
+
+      <ul>
+      <% @ref.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :detalle %><br />
+    <%= f.text_field :detalle %>
+  </div>
+  <div class="field">
+    <%= f.label :pic_id %><br />
+    <%= select("ref", "pic_id", Pic.find(:all, :order=>"titulo ASC").collect {|p| [ p.titulo + "(" + p.nombre + ")" , p.id ] }, {:include_blank => 'Seleccione una imagen'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :autor_id %><br />
+   <%= f.select(:autor_id, Autor.find(:all,
+    	 :order=>"nombre ASC").collect {|p| [ p.nombre + "(" + p.especialidad + ")" , p.id ] },{ :prompt => "Please select"},
+                                   { :multiple => true, :size => 5 }
+                                 ) %>
+                                 
+                              <br />   
+                                 
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
