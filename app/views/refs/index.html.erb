@@ -16,7 +16,7 @@
     <td><%= ref.titulo %></td>
     <td><%= ref.detalle %></td>
     <td><%= ref.pic_id %></td>
-    <td><%= ref.autor_id %></td>
+    <td><%= ref.autors.collect { |u| u.nombre + " "} %></td>
     <td><%= link_to 'Show', ref %></td>
     <td><%= link_to 'Edit', edit_ref_path(ref) %></td>
     <td><%= link_to 'Destroy', ref, :confirm => 'Are you sure?', :method => :delete %></td>

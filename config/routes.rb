@@ -1,4 +1,6 @@
 Webinst::Application.routes.draw do
+  resources :arts
+
   resources :refs
 
   resources :autors

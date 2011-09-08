@@ -1,0 +1,27 @@
+<h1>Listing arts</h1>
+
+<table>
+  <tr>
+    <th>String</th>
+    <th>Text</th>
+    <th>Text</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @arts.each do |art| %>
+  <tr>
+    <td><%= art.string %></td>
+    <td><%= art.text %></td>
+    <td><%= art.text %></td>
+    <td><%= link_to 'Show', art %></td>
+    <td><%= link_to 'Edit', edit_art_path(art) %></td>
+    <td><%= link_to 'Destroy', art, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Art', new_art_path %>

@@ -1,3 +1,4 @@
+
 <%= form_for(@ref) do |f| %>
   <% if @ref.errors.any? %>
     <div id="error_explanation">
@@ -24,13 +25,11 @@
     <%= select("ref", "pic_id", Pic.find(:all, :order=>"titulo ASC").collect {|p| [ p.titulo + "(" + p.nombre + ")" , p.id ] }, {:include_blank => 'Seleccione una imagen'}) %>
   </div>
   <div class="field">
-    <%= f.label :autor_id %><br />
-   <%= f.select(:autor_id, Autor.find(:all,
-    	 :order=>"nombre ASC").collect {|p| [ p.nombre + "(" + p.especialidad + ")" , p.id ] },{ :prompt => "Please select"},
-                                   { :multiple => true, :size => 5 }
-                                 ) %>
-                                 
-                              <br />   
+    <%= f.label :autor%><br />
+   <select id="autors" name="ref[autor_ids][]" multiple="multiple"
+size="10" style="width: 250px;">
+		<%= options_from_collection_for_select(Autor.find(:all), :id, :nombre, @ref.autors.collect { |u| u.id}) %>
+	</select>                        <br />   
                                  
   </div>
   <div class="actions">

@@ -41,7 +41,8 @@ class RefsController < ApplicationController
   # POST /refs.xml
   def create
     @ref = Ref.new(params[:ref])
-
+    @ref.autors = params[:autors] ? Autor.find(params[:autors]) : []
+  #video.categories = params[:categories] ? Category.find(params[:categories]) : []
     respond_to do |format|
       if @ref.save
         format.html { redirect_to(@ref, :notice => 'Ref was successfully created.') }

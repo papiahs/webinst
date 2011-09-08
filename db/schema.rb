@@ -10,7 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110905172358) do
+ActiveRecord::Schema.define(:version => 20110908184803) do
+
+  create_table "arts", :force => true do |t|
+    t.string   "titulo"
+    t.text     "resumen"
+    t.text     "contenido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "arts_autors", :id => false, :force => true do |t|
+    t.integer "autor_id"
+    t.integer "art_id"
+  end
+
+  create_table "arts_pics", :id => false, :force => true do |t|
+    t.integer "art_id"
+    t.integer "pic_id"
+  end
+
+  create_table "arts_refs", :id => false, :force => true do |t|
+    t.integer "art_id"
+    t.integer "ref_id"
+  end
 
   create_table "autors", :force => true do |t|
     t.string   "nombre"
@@ -38,7 +61,6 @@ ActiveRecord::Schema.define(:version => 20110905172358) do
     t.string   "titulo"
     t.string   "detalle"
     t.integer  "pic_id"
-    t.integer  "autor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
