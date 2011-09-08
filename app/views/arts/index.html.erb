@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>String</th>
-    <th>Text</th>
-    <th>Text</th>
+    <th>Titulo</th>
+    <th>Resumen</th>
+    <th>Contenido</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +12,9 @@
 
 <% @arts.each do |art| %>
   <tr>
-    <td><%= art.string %></td>
-    <td><%= art.text %></td>
-    <td><%= art.text %></td>
+    <td><%= art.titulo %></td>
+    <td><%= art.resumen %></td>
+    <td><%= art.contenido %></td>
     <td><%= link_to 'Show', art %></td>
     <td><%= link_to 'Edit', edit_art_path(art) %></td>
     <td><%= link_to 'Destroy', art, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -12,17 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
   </div>
   <div class="field">
-    <%= f.label :text %><br />
-    <%= f.text_field :text %>
+    <%= f.label :resumen %><br />
+    <%= f.text_field :resumen %>
   </div>
   <div class="field">
-    <%= f.label :text %><br />
-    <%= f.text_field :text %>
+    <%= f.label :contenido %><br />
+    <%= f.text_field :contenido %>
   </div>
+ 
+  <div class="field">
+ 
+	<p><label for="blog_content">Content</label><br/>
+<%= text_area 'blog', 'content', :cols => "50"  %></p>
+
+  </div>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>
