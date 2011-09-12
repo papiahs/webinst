@@ -8,7 +8,8 @@
    <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
 	<script language="javascript" type="text/javascript">
 	        tinyMCE.init({
-	            mode : "textareas",
+	            mode : "specific_textareas",
+	            editor_selector : "mceEditor",
 	            theme : "advanced",
 	            convert_urls : false,
 	            plugins : "emotions,preview",
