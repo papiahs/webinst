@@ -6,9 +6,12 @@ class PicsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.js
       format.xml  { render :xml => @pics }
     end
   end
+
+  
 
   # GET /pics/1
   # GET /pics/1.xml

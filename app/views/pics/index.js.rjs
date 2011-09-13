@@ -1,0 +1,5 @@
+page << 'var tinyMCEImageList = new Array('
+@pics.each do |pic| 
+  page << render(pic)
+end
+page << '["-", ""]);'
