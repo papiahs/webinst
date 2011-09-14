@@ -25,8 +25,13 @@
 	</script>
 </head>
 <body>
-
-<%= yield %>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo"><%= image_tag url_img(5,'logo.jpg'), :title => 'sitio titulo'%>	</div>
+	</div>
+	
+	<%= yield %>
+</div>
 
 </body>
 </html>

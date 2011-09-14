@@ -1,4 +1,6 @@
 Webinst::Application.routes.draw do
+  get "home/index"
+
   resources :arts
 
   resources :refs
