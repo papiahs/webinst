@@ -1,5 +1,6 @@
 body{
 	margin-top: 0; margin-left: 0; margin-bottom: 0; margin-right: 0;
+	font-family: Arial,Helvetica,sans-serif;
 }
 
 
@@ -9,7 +10,28 @@ body{
 }
 
 
-#wrapper{
-	width: 1024px;
-	margin: auto;
+#header{
+	width: 100%;
+	float:left;
+	padding-bottom: 10px;
+	
+	
 }
+
+#colLeft{
+	width: 200px;
+	margin: 0;
+	float:left;
+}
+#Contenido{
+	width: 620px;
+	margin: 0;
+	float:left;border:solid 1px red;
+}
+
+#colRigth{
+	width: 200px;
+	margin: 0;
+	float:right;
+}
+
