@@ -1,8 +1,9 @@
 #header #logo img{max-width: 150px;max-height: 150px;float:left;}
-#header #keywordsTop{float:right;font-size:8px;}
+#header #keywordsTop{float:right;font-size:8px;background-color: #2D2D2D;color:#FFFFFF;padding:0px 5px 0px 5px}
 
 #header #titulo{margin:0;float:left;width:800px;padding-top: 15px;padding-left: 20px;}
-#header #botones{float:right;font-size:14px;padding-right: 100px;}
+#header #botones{float:right;font-size:14px;padding-right: 100px;border:solid 1px red;padding-bottom:0px}
 
-#header h1{}
-#header h2{}
+
+#header h1{margin-bottom:3px;}
+#header h2{margin-top:2px;}
