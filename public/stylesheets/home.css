@@ -1,2 +1,23 @@
 #colLeft{
 	display: none}
+#colRigth{
+	display: none}
+	
+#Contenido{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+#Contenido #conLeft{
+	width: 270px;
+	padding: 10px;	
+	float:left;
+}
+
+#Contenido #conLeft #mapa{
+	margin: auto;width:250px;overflow: hidden;
+}
+
+#Contenido #conLeft h3{color:#60356A;font-style: italic;font-weight: bold;font-size: 16px; margin-bottom: 5px;}
+
+#Contenido #conLeft .texto{font-size: 12px;margin-left:12px;margin-top: 10px;margin-bottom: 10px;}

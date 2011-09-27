@@ -1,5 +1,34 @@
 <%= stylesheet_link_tag "home" %>   
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-
-
+<div id="conLeft">
+	<h3>Ubicacion del centro...</h3>
+	<div id="mapa">
+		<%= render :partial => "mapa" %>		
+	</div>
+	<div class="texto">
+		Vicente Lopez 300 piso 3<br />
+		Monte Grande - Esteban Echeverria<br />
+		Buenos Aires - Argentina
+		<br /><br />
+		<b>Zonas cercanas</b><br />
+		<small>
+			Luis Guillon - Canning - Ezeiza - Adrogue - 
+			San Vicente - Lavallol - Turdera.
+		</small>
+	</div>
+	<h3>Como empezar...</h3>
+	<div class="texto">
+		Los Trastornos del Aprendizaje (TA) interfieren en la capacidad cognitiva de la persona. Son cuadros que afectan diferentes áreas del proceso psicológico básico involucrando las habilidades para leer, escribir, hablar, comprender, razonar y/o aprender matemáticas. Se trata de trastornos que...
+		<br /><br />
+		<div style="float: right"><a href="#" class="boton1 redon3px f14">mas informacion...</a></div>
+	</div>
+	<br />
+	<h3>Secciones mas vistas...</h3>
+	<div class="texto"><ul>
+		<li class="lilink"><a href="#">Trastornos psiquiatricos</a></li>
+		<li class="lilink"><a href="#">Obsesidad y obsecion por la comida</a></li>
+		<li class="lilink"><a href="#">Los Profesionales</a></li>
+		<li class="lilink"><a href="#">Problemas de conducta</a></li>
+		<li class="lilink"><a href="#">Problemas de aprendizaje</a></li>
+		</ul>
+	</div>
+</div>
