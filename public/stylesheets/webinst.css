@@ -51,15 +51,8 @@ a:hover{text-decoration:none;color:#CC0066}
 	width: 100%;
 	float:left;
 	padding-bottom: 10px;
-<<<<<<< HEAD
 	background-color: #FFFFFF;
 	}
-=======
-	background-color: #FFFFFF;border-color: #FFFFFF;
-	
-}
-#lineaHeader{float:left;width:100%;height: 10px;background-color: #FFFFFF;padding-top:0px; margin-top: 10px}
->>>>>>> 98492be5c639a3454abd6b036656f5d869f26012
 
 #colLeft{
 	width: 200px;
@@ -71,10 +64,6 @@ a:hover{text-decoration:none;color:#CC0066}
 	width: 620px;
 	margin: 0;
 	float:left;
-<<<<<<< HEAD
-=======
-	border:solid 1px red;
->>>>>>> 98492be5c639a3454abd6b036656f5d869f26012
 }
 
 #colRigth{
@@ -83,7 +72,6 @@ a:hover{text-decoration:none;color:#CC0066}
 	float:right;
 }
 
-<<<<<<< HEAD
 .redon6px{
 	border-radius: 6px; // propiedad CSS3
 	-ms-border-radius: 6px;
@@ -108,37 +96,3 @@ a:hover{text-decoration:none;color:#CC0066}
 .f14{font-size: 14px}
 .f12{font-size: 12px}
 .f16{font-size: 16px}
-=======
-
-.degradado1 {
-    height: 1000px;
-    background-color: #9844BD;
-    background-image: -moz-linear-gradient(100% 100% 90deg, #DB42AE, #9844BD) !important;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9844BD), to(#DB42AE)) !important;
-   
-}
-
-.curvedBottom {
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius:  0 0 5px 5px;
-    behavior:url(border-radius.htc);
-}
-.curvedTop {
-    -moz-border-radius: 5px 5px 0px 00px;
-    -webkit-border-radius:  5px 5px 0px 00px;;
-    behavior:url(border-radius.htc);
-}
-
-.curvedBottom10px {
-    -moz-border-radius: 0 0 10px 10px;
-    -webkit-border-radius:  0 0 10px 10px;
-    behavior:url(border-radius.htc);
-}
-.curvedTop10px {
-    -moz-border-radius: 10px 10px 0px 00px;
-    -webkit-border-radius:  10px 10px 0px 00px;;
-    behavior:url(border-radius.htc);
-}
-
-
->>>>>>> 98492be5c639a3454abd6b036656f5d869f26012
