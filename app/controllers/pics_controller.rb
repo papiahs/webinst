@@ -3,6 +3,7 @@ class PicsController < ApplicationController
   # GET /pics.xml
   def index
     @pics = Pic.all
+    @titlePage ="Administracion de Imagenes"
 
     respond_to do |format|
       format.html # index.html.erb

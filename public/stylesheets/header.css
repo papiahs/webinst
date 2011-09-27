@@ -1,8 +1,18 @@
-#header #logo img{max-width: 150px;max-height: 150px;float:left;}
-#header #keywordsTop{float:right;font-size:8px;}
+#header #logo img{max-width: 134px;max-height: 134px;float:left;padding: 10px 10px 0px 15px}
+#header #keywordsTop {float:right;}
+#header #keywordsTop h4{font-size:8px;margin: 0px 5px;padding: 0px;}
 
-#header #titulo{margin:0;float:left;width:800px;padding-top: 15px;padding-left: 20px;}
-#header #botones{float:right;font-size:14px;padding-right: 100px;}
+#header #titulo{margin:0;float:left;width:500px;padding-top: 15px;padding-left: 20px;}
+#header #buscador{margin:10px 0px 0px 0px;float:right;width:250px;}
+#header #buscador a{background-color: #94669F;color:#FFFFFF;
+					padding:2px 6px 2px 6px;
+					font-weight: bold;border:solid 1px #B495BD;font-style: italic}
+#header #buscador a:hover{background-color: #94669F;border:solid  1px #333333}
 
-#header h1{}
-#header h2{}
+#header #subtitulo{margin:0;float:left;width:520px;}
+#header #botones{float:right;font-size:14px;padding-right: 10px;width:300px;text-align: right;margin-top: 5px}
+#header #botones a{font-style:normal;color:#FFFFFF;background-color: #7C0727;
+					padding:2px 6px 2px 6px;font-weight: bold;}
+#header #botones a:hover{background-color: #CC0066;}
+#header h1{margin-bottom: 0px}
+#header h2{font-size: 18px;padding-left: 50px;margin-top:5px;}

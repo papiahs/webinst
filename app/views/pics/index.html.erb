@@ -12,7 +12,7 @@
 
 <% @pics.each do |pic| %>
   <tr>
-  	<td><%= image_tag url_img(pic.id,pic.nombre), :title => pic.titulo %></td>
+  	<td align="center"><%= image_tag url_img(pic.id,pic.nombre), :title => pic.titulo ,:style=>"max-height:80px;max-width:80px;"%></td>
     <td><%= pic.titulo %></td>
     <td><%= pic.nombre %></td>
     <td><%= pic.tipo %></td>

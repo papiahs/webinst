@@ -1,12 +1,20 @@
+@import url('/stylesheets/header.css');
+
 body{
 	margin-top: 0; margin-left: 0; margin-bottom: 0; margin-right: 0;
-	font-family: Arial,Helvetica,sans-serif;
+	font-family: Arial,Helvetica,sans-serif;background-color: #B7969F;
+	background-image: url('/pics/2/view/fondoSuperior_jpg');
+	background-repeat: repeat-x;
 }
-
+a{text-decoration:none;}
 
 #wrapper{
 	width: 1024px;
 	margin: auto;
+	margin-top:20px;
+	background-color: #FFFFFF;
+	border:solid 1px #B495BD;
+	
 }
 
 
@@ -14,15 +22,14 @@ body{
 	width: 100%;
 	float:left;
 	padding-bottom: 10px;
-	
-	
-}
+	}
 
 #colLeft{
 	width: 200px;
 	margin: 0;
 	float:left;
 }
+
 #Contenido{
 	width: 620px;
 	margin: 0;
@@ -35,3 +42,18 @@ body{
 	float:right;
 }
 
+.redon6px{
+	border-radius: 6px; // propiedad CSS3
+	-ms-border-radius: 6px;
+	-moz-border-radius:6px; // Firefox
+	-webkit-border-radius: 6px; // WebKit y Safari
+	-khtml-border-radius: 6px;
+}
+
+.redon3px{
+	border-radius: 3px; // propiedad CSS3
+	-ms-border-radius: 3px;
+	-moz-border-radius:3px; // Firefox
+	-webkit-border-radius: 3px; // WebKit y Safari
+	-khtml-border-radius: 3px;
+}
