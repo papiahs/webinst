@@ -1,27 +1,19 @@
-<h1>Listing arts</h1>
+<div id="beNuevo"><%= link_to 'Nuevo Articulo', new_art_path %></div>
+<h1>Listado de Articulos</h1>
 
-<table>
-  <tr>
-    <th>Titulo</th>
-    <th>Resumen</th>
-    <th>Contenido</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+<br>
 <% @arts.each do |art| %>
-  <tr>
-    <td><%= art.titulo %></td>
-    <td><%= art.resumen %></td>
-    <td><%= art.contenido %></td>
-    <td><%= link_to 'Show', art %></td>
-    <td><%= link_to 'Edit', edit_art_path(art) %></td>
-    <td><%= link_to 'Destroy', art, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<div>
+		<div class="filaTitulo">			
+			<div style="float: right;"><%= link_to 'Editar', edit_art_path(art) %>
+				<%= link_to 'Borrar', art, :confirm => 'Estas seguro?', :method => :delete %>
+			</div>
+			<div><%= link_to art.titulo,art %></div>
+		</div>
+		<div>
+			<%= art.resumen[0,250] %>
+		</div>
+	</div>
 <% end %>
-</table>
-
 <br />
 
-<%= link_to 'New Art', new_art_path %>

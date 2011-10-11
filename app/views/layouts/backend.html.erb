@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= (@titlePage || titleSite) + " - " + nameSite%></title>
+  <%= stylesheet_link_tag "webinst" %>   
+  <%= stylesheet_link_tag "backend" %>   
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
+  <%= javascript_include_tag 'tinymce_init' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo"><%= image_tag url_img(1,'psicologia_monte_grande.jpg'), :title => 'Psicopedagogia Psicologia Nutricion'%></div>
+		<div id="keywordsTop"><h4>PSICOLOGIA | PSICOPEDAGOGIA | NUTRICION | ADICCION | TERAPIA OCUPACIONAL | MONTE GRANDE | ESTEBAN ECHEVERRIA</h4></div>
+		<div id="titulo"><h1><%= image_tag url_img(3,'Fundacion_SurAlma.jpg'), :title => 'Centro Terapeutico de Atención del Niño y su Familia'%></h1></div>
+		<div id="buscador">Buscar <input title="Buscar en el sitio. Ejemplo: terapia ocupacional, psicodiagnostico, etc." type="text" size="20"/><a href="#" class="boton1 redon3px f16">Ir</a></div>
+		<div id="subtitulo"><h2>Centro Terapeutico de Atención del Niño y su Familia</h2></div>
+		<div id="botones"><a class="redon6px" href="/" title="Pagina de inicio">Inicio</a> 
+			<a  class="redon6px"  href="/Conocenos/" title="Informacion sobre el centro">Conocenos</a> 
+			<a class="redon6px"  href="/Contactanos/" title="Zona Sur Monte Grande Esteban Echeverria">Contactanos</a></div>
+	</div>
+	<br style="clear:both">
+	<div id="colLeft"><li><%= link_to "Articulos", arts_path %></li></div>
+	<div id="Contenido"><%= yield %></div>	
+	<br style="clear:both"><br style="clear:both">
+</div>
+<div id="wrapper2"><div id="wrapper3">
+	<div id="footer">
+		<div id="col"><h5>Conocenos</h5>
+			<a href="#" class="f12">Objetivos</a><br />
+			<a href="#" class="f12">Nuestra Mision</a><br />
+			<a href="#" class="f12">Filosofia</a><br />
+			<a href="#" class="f12">Profesionales</a>
+		</div>
+		<div id="col"><h5>Psicopedagogia</h5>
+			<a href="#" class="f12">Objetivos</a><br />
+			<a href="#" class="f12">Nuestra Mision</a><br />
+			<a href="#" class="f12">Filosofia</a><br />
+			<a href="#" class="f12">Profesionales</a>
+		</div>
+		<div id="col"><h5>Psicologia</h5>
+			<a href="#" class="f12">Objetivos</a><br />
+			<a href="#" class="f12">Nuestra Mision</a><br />
+			<a href="#" class="f12">Filosofia</a><br />
+			<a href="#" class="f12">Profesionales</a>
+		</div>
+		<div id="col"><h5>Terapia Ocupacional</h5>
+			<a href="#" class="f12">Objetivos</a><br />
+			<a href="#" class="f12">Nuestra Mision</a><br />
+			<a href="#" class="f12">Filosofia</a><br />
+			<a href="#" class="f12">Profesionales</a>
+		</div>
+		<div id="col"><h5>Atencion Temprana</h5>
+			<a href="#" class="f12">Objetivos</a><br />
+			<a href="#" class="f12">Nuestra Mision</a><br />
+			<a href="#" class="f12">Filosofia</a><br />
+			<a href="#" class="f12">Profesionales</a>
+		</div>
+	</div>
+</div></div>
+
+</body>
+</html>

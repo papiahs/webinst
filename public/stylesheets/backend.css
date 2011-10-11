@@ -1,0 +1,36 @@
+#Contenido{
+	width: 820px;
+	margin: 0;
+	float:left;
+	font-size:12px;
+	text-align:left;
+}
+
+#Contenido h1{font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #423F54;
+	letter-spacing: 0.15em;}
+	
+#Contenido table{border:solid 1px #423F54; width:100%;}
+#Contenido table th{ color: #423F54;
+	font-weight: bold;
+	background-color: #E5EAEF;}
+
+.filaTitulo{
+	clear: both;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-bottom: 1px dotted #FFC266;
+	position: relative;
+	height: 18px;
+	font-size: 16px;
+	font-weight: bold;	
+}
+.filaTitulo:hover{background-color: #E5EAEF;}
+
+
+
+
+
+#Contenido #beNuevo{float:right}

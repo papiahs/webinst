@@ -1,9 +1,10 @@
 class ArtsController < ApplicationController
+  layout "backend"
+
   # GET /arts
   # GET /arts.xml
   def index
     @arts = Art.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @arts }
@@ -81,3 +82,5 @@ class ArtsController < ApplicationController
     end
   end
 end
+
+

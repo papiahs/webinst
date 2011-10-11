@@ -2,6 +2,8 @@ Webinst::Application.routes.draw do
   get "home/index"
 
   resources :arts
+  
+  match ':title/:id' => 'home#viewart', :as => :view_homeart
 
   resources :refs
 
